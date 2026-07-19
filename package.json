@@ -1,6 +1,7 @@
 {
   "name": "cryptojs-extension",
   "version": "0.2.2-dev",
+  "packageManager": "yarn@4.13.0",
   "description": "Some additional crypto functions built on top of CryptoJS",
   "main": "build_node/index.js",
   "directories": {
@@ -21,9 +22,12 @@
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-execute": "^0.2.2",
     "load-grunt-config": "^4.0.1",
-    "lodash": "^4.0.0"
+    "lodash": "^4.0.0",
+    "npm-check-updates": "^22.2.9"
   },
   "scripts": {
+    "update": "yarn up -R '*' && yarn dedupe --strategy highest",
+    "latest": "yarn npm-check-updates -i -m --packageManager yarn --install never && yarn install",
     "build": "grunt build",
     "test": "grunt test"
   },
