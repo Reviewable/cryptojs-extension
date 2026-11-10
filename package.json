@@ -1,7 +1,7 @@
 {
   "name": "cryptojs-extension",
   "version": "0.2.2-dev",
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@4.18.1",
   "description": "Some additional crypto functions built on top of CryptoJS",
   "main": "build_node/index.js",
   "directories": {
